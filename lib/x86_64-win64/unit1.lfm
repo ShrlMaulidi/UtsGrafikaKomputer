@@ -1,0 +1,149 @@
+object Form1: TForm1
+  Left = 1048
+  Height = 830
+  Top = 135
+  Width = 832
+  Caption = 'Form1'
+  ClientHeight = 830
+  ClientWidth = 832
+  OnCreate = FormCreate
+  LCLVersion = '3.4.0.0'
+  object PaintBox1: TPaintBox
+    Left = 88
+    Height = 358
+    Top = 32
+    Width = 632
+    OnPaint = PaintBox1Paint
+  end
+  object BtnColorDinding: TButton
+    Left = 80
+    Height = 41
+    Top = 449
+    Width = 104
+    Caption = 'Warna Dinding'
+    TabOrder = 0
+    OnClick = BtnColorDindingClick
+  end
+  object BtnColorAtap: TButton
+    Left = 224
+    Height = 41
+    Top = 449
+    Width = 96
+    Caption = 'Warna Atap'
+    TabOrder = 1
+    OnClick = BtnColorAtapClick
+  end
+  object BtnColorPintu: TButton
+    Left = 360
+    Height = 41
+    Top = 449
+    Width = 104
+    Caption = 'Warna Pintu'
+    TabOrder = 2
+    OnClick = BtnColorPintuClick
+  end
+  object BtnColorJendela: TButton
+    Left = 504
+    Height = 41
+    Top = 448
+    Width = 96
+    Caption = 'Warna Jendela'
+    TabOrder = 3
+    OnClick = BtnColorJendelaClick
+  end
+  object BtnZoomIn: TButton
+    Left = 80
+    Height = 40
+    Top = 520
+    Width = 107
+    Caption = 'Zoom in'
+    TabOrder = 4
+    OnClick = BtnZoomInClick
+  end
+  object BtnZoomOut: TButton
+    Left = 224
+    Height = 40
+    Top = 520
+    Width = 96
+    Caption = 'Zoom out'
+    TabOrder = 5
+    OnClick = BtnZoomOutClick
+  end
+  object BtnMoveLeft: TButton
+    Left = 360
+    Height = 40
+    Top = 520
+    Width = 104
+    Caption = 'Kiri'
+    TabOrder = 6
+    OnClick = BtnMoveLeftClick
+  end
+  object BtnMoveRight: TButton
+    Left = 504
+    Height = 40
+    Top = 520
+    Width = 96
+    Caption = 'Kanan'
+    TabOrder = 7
+    OnClick = BtnMoveRightClick
+  end
+  object BtnStartAnimation: TButton
+    Left = 632
+    Height = 41
+    Top = 449
+    Width = 92
+    Caption = 'Mulai Animasi'
+    TabOrder = 8
+    OnClick = BtnStartAnimationClick
+  end
+  object BtnPemandangan: TButton
+    Left = 632
+    Height = 41
+    Top = 520
+    Width = 120
+    Caption = 'Pemandangan'
+    TabOrder = 9
+    OnClick = BtnPemandanganClick
+  end
+  object Label1: TLabel
+    Left = 88
+    Height = 15
+    Top = 8
+    Width = 135
+    Caption = 'Nama : SAHRUL MAULIDI'
+  end
+  object ColorDialog1: TColorDialog
+    Color = clBlack
+    CustomColors.Strings = (
+      'ColorA=000000'
+      'ColorB=000080'
+      'ColorC=008000'
+      'ColorD=008080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=0000FF'
+      'ColorK=00FF00'
+      'ColorL=00FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
+    Left = 88
+    Top = 616
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 50
+    OnTimer = Timer1Timer
+    Left = 160
+    Top = 616
+  end
+end
